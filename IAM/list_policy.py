@@ -8,7 +8,7 @@ def list_policies():
 
     paginator = iam.get_paginator('list_policies')
 
-    for response in paginator.paginate(Scope="AWS"):
+    for response in paginator.paginate(Scope="AWS"):  # gives AWS Managed by AWS, can use Local also to list customer managed policies
         for policy in response['Policies']:
             policy_name = policy['PolicyName']
             Arn = policy['Arn']

@@ -23,3 +23,10 @@ Username : itadmin-IAM Arn : arn:aws:iam::528418585832:user/itadmin-IAM
 Username : testuser Arn : arn:aws:iam::528418585832:user/testuser
 Username : testuser2 Arn : arn:aws:iam::528418585832:user/testuser2
 Username : vprofile-s3-admin Arn : arn:aws:iam::528418585832:user/vprofile-s3-admin
+
+
+
+
+#############################################
+
+Some AWS operations return results that are incomplete and require subsequent requests in order to attain the entire result set. The process of sending subsequent requests to continue where a previous request left off is called pagination. For example, the list_objects operation of Amazon S3 returns up to 1000 objects at a time, and you must send subsequent requests with the appropriate Marker in order to retrieve the next page of results.
